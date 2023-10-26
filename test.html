@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive website header </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background: radial-gradient(#fff, #ffd6d6);
+            height: 70px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: black;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            background: #fff;
+            transition: .5s;
+
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: black;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+        .container img {
+                width: 40%;
+                height: 400px;
+                margin-right: 50px;
+            }
+
+        @media(max-width:952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #e4ffd6;
+                top: 80px;
+                text-align: center;
+                left: -100%;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background: none;
+                color: aqua;
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+
+            
+
+            .lakshmi-text h1 {
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Lakshmi's store</label>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="products">products</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="account">account</a></li>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </ul>
+    </nav>
+    <div>
+        <div class="lakshmi" id="homepage">
+            <div class="container">
+                <img src="image1.png">
+                <div class="lakshmi-text">
+                    <h1>Give Your Workout A New Style!</h1>
+                    <p> Sucess isn't always about greatness.It's about consistency. Consistent
+                        hard work gains success. Greatness will come.</p>
+                    <input type="button" name="Explore Now" value="Explore Now">
+                </div>
+            </div>
+             </body>
+
+</html>
