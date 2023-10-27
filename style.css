@@ -20,8 +20,6 @@ label.logo {
     color: black;
     font-size: 20px;
     line-height: 80px;
-    /* padding: 0 100px; */
-    /* font-weight: bold; */
     padding-left: 25px;
 }
 
@@ -34,7 +32,7 @@ nav ul {
 nav ul li {
     display: inline;
     line-height: 80px;
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
 a {
@@ -61,15 +59,6 @@ a:hover {
     display: none;
 }
 
-.box3,
-.box4,
-.box5 {
-    height: 1000px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-}
-
 .container {
     height: 600px;
     padding: 20px;
@@ -88,8 +77,6 @@ a:hover {
 
 .hero-text h1 {
     font-size: 2rem;
-    /* border: 2px solid red;
-    width: 300px; */
 }
 
 .hero-text {
@@ -122,13 +109,137 @@ button {
 }
 
 .box2 img {
+    margin-left: 50px;
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
     padding: 10px;
 
 }
+.feature{
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.gallery{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+}
 
-@media (max-width: 952px) {
+.content{
+    width: 25%;
+    /* box-sizing: border-box; */
+    text-align: center;
+    margin-left: 40px;
+    
+}
+.content img {
+    padding-top: 60px;
+    max-width: 80%;
+    height: 100%;
+    text-align: center;
+    
+}
+.content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content .checked{
+    color: red;
+}
+.mid-section {
+    margin-top: 120px;
+    display: flex;
+ }
+ .content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(1rem, 3rem);
+ }
+
+ .user-all{
+    margin-top: 40px;
+ }
+ .small-box{
+    display: flex;
+    max-width: auto;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+ }
+ .review{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+    
+ }
+ .review ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review img{
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.brands{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+    cursor: pointer;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-box1{
+    flex-basis: 33%;
+    /* min-width: 250px; */
+}
+.footer-image1 img{
+    width: 120px;
+}
+.footer-box2{
+    text-align: center;
+    flex: 33%;
+    max-width: 300px;
+}
+.footer-box2 img{
+    width: 160px;
+}
+.footer-box3{
+    flex-basis: 33%;
+    text-align: center;
+}
+.footer-box4{
+    text-align: center;
+}
+.fa-copyright{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ @media (max-width: 952px) {
     label.logo {
         font-size: 20px;
         padding-left: 50px;
@@ -187,13 +298,23 @@ button {
         font-size: 1.5rem;
     }
 
-    .box2 {
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
+    .box2 img{
+        flex-basis: 100%;
+    }
+    
+    
+}
+@media (max-width:500px){
+    .gallery{
+        display: grid;
+        border: 2px solid blue;
+        box-sizing: border-box;
+        margin-top: 900px;
+        padding: 50px;
+        justify-content: center;
+        max-width: auto;
+        
+        
     }
 }
-@media (max-width:768){
-    .box2{
-        grid-template-columns: 2,1fr;
-    }
-}
+
